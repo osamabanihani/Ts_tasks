@@ -1,0 +1,47 @@
+.page {
+  width: 85%;
+  max-width: 900px;
+  margin: 25px auto;
+}
+
+header {
+  background-color: #253248;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+header h1 { margin-bottom: 5px; }
+header p { margin: 7px; }
+
+.status {
+  text-align: center;
+  color: green;
+  background-color: #e5f6e9;
+  padding: 12px;
+}
+
+h2 { margin-top: 25px; }
+
+.featured, .product, .summary {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+.products {
+  display: flex;
+  gap: 10px;
+}
+
+.product {
+  flex: 1;
+  text-align: center;
+}
+
+.product p { color: #c65c11; }
+.summary { line-height: 1.6; }
+
+@media (max-width: 600px) {
+  .products { flex-direction: column; }
+}
