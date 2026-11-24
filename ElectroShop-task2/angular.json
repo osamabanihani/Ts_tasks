@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "projects": {
+    "electroshop": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "browser": "src/main.ts",
+            "index": "src/index.html",
+            "tsConfig": "tsconfig.json",
+            "outputPath": "dist/electroshop",
+            "polyfills": [
+              "zone.js"
+            ],
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.css"
+            ]
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "electroshop:build"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "662421a0-2902-4a74-8974-5acba51998e7"
+  }
+}
