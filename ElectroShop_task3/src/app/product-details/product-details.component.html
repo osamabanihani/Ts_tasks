@@ -1,0 +1,16 @@
+<section class="card">
+  <h2>Product Details</h2>
+  <h3>{{ productName }}</h3>
+  <p class="description">{{ productDescription }}</p>
+  <p><strong>Price:</strong> ${{ productPrice }}</p>
+  <p><strong>Status:</strong> <span class="status">{{ isAvailable ? 'Available' : 'Not Available' }}</span></p>
+
+  <div class="actions">
+    <div class="quantity-control">
+      <button aria-label="Decrease quantity" (click)="decrease()">−</button>
+      <span>{{ quantity() }}</span>
+      <button aria-label="Increase quantity" (click)="increase()">+</button>
+    </div>
+    <button class="add-button" (click)="addToCart()" [disabled]="!isAvailable">Add to Cart</button>
+  </div>
+</section>
