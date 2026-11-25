@@ -1,6 +1,0 @@
-.card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; min-height: 315px; box-shadow: 0 4px 15px #1b35500b; }
-h2 { font-size: 19px; margin: 0 0 27px; }
-p { margin: 17px 0; font-size: 15px; }
-.total { margin-top: 31px; padding: 16px; border-radius: 8px; background: #ecf5fd; color: #1a5e9d; font-size: 18px; font-weight: bold; }
-.empty { padding-top: 23px; color: #65758c; }
-.hint { color: #8795a7; font-size: 13px; }

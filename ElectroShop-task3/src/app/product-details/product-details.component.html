@@ -1,0 +1,29 @@
+<section>
+  <h2>Product Details</h2>
+  <img [src]="productImage" [alt]="productName">
+  <h3>{{ productName }}</h3>
+  <p>{{ productDescription }}</p>
+  <p>Price: ${{ productPrice }}</p>
+  <p>Status: {{ isAvailable ? 'Available' : 'Unavailable' }}</p>
+  <p>Discount: {{ discountPercentage }}%</p>
+
+  <div class="quantity-row">
+    <button (click)="decreaseQuantity()" [disabled]="quantity() <= 1">−</button>
+    <span>Quantity: {{ quantity() }}</span>
+    <button (click)="increaseQuantity()">+</button>
+  </div>
+  <p>Total: ${{ productPrice * quantity() * (1 - discountPercentage / 100) }}</p>
+  <button (click)="addProductToCart()" [disabled]="!isAvailable">Add to Cart</button>
+
+  <!-- Day 2: keep the original editable fields using ngModel. -->
+  <h3>Update Product</h3>
+  <label>Name:
+    <input [(ngModel)]="productName" (ngModelChange)="notifyProductChanged()">
+  </label>
+  <label>Description:
+    <input [(ngModel)]="productDescription" (ngModelChange)="notifyProductChanged()">
+  </label>
+  <label>Price:
+    <input type="number" min="0" [(ngModel)]="productPrice" (ngModelChange)="notifyProductChanged()">
+  </label>
+</section>

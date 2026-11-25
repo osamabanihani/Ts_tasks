@@ -1,0 +1,6 @@
+section { background: white; padding: 20px; border: 1px solid #ddd; border-radius: 6px; }
+img { display: block; width: 150px; height: 100px; object-fit: contain; }
+.quantity-row { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+.quantity-row span { min-width: 94px; text-align: center; }
+label { display: block; margin: 12px 0; }
+input { display: block; box-sizing: border-box; width: 100%; max-width: 340px; padding: 7px; margin-top: 4px; border: 1px solid #ccc; border-radius: 4px; }

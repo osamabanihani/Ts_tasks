@@ -1,0 +1,36 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+
+<!-- Day 2: keep the original product list and its Buy Now buttons. -->
+<app-product-list></app-product-list>
+
+<!-- Day 3: add Signals, @Input, @Output and a shopping cart to the same page. -->
+<div class="day3-area">
+  <h2>Product Details & Shopping Cart</h2>
+  <p>Choose a product to view:</p>
+  <div class="choose-product">
+    <button (click)="showLaptop()">Laptop</button>
+    <button (click)="showHeadphones()">Wireless Headphones</button>
+  </div>
+
+  <div class="details-and-cart">
+    <app-product-details
+      [productKey]="selectedProduct()"
+      [productName]="productName()"
+      [productDescription]="productDescription()"
+      [productPrice]="productPrice()"
+      [isAvailable]="isAvailable()"
+      [productImage]="productImage()"
+      (addToCart)="onAddToCart($event)"
+      (productUpdated)="onProductUpdated($event)">
+    </app-product-details>
+
+    <app-shopping-cart
+      [productName]="cartProductName"
+      [productPrice]="cartProductPrice"
+      [quantity]="cartQuantity">
+    </app-shopping-cart>
+  </div>
+</div>
+
+<app-footer></app-footer>
