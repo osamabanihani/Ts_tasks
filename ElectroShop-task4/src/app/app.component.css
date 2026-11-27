@@ -1,0 +1,8 @@
+:host { display: block; }
+.day3-area { max-width: 1100px; margin: 28px auto; padding: 0 16px; }
+.day3-area > h2 { text-align: center; margin-bottom: 6px; }
+.day3-area > p { text-align: center; margin-top: 6px; }
+.choose-product { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+.details-and-cart { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 14px; align-items: flex-start; }
+.details-and-cart > app-product-details,
+.details-and-cart > app-shopping-cart { flex: 1 1 340px; min-width: 0; }

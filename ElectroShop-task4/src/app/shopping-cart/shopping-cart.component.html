@@ -1,0 +1,11 @@
+<section>
+  <h2>🛒 Shopping Cart</h2>
+  <div [hidden]="quantity === 0">
+    <p>Product: {{ productName }}</p>
+    <p>Unit Price: {{ productPrice }} JD</p>
+    <p>Quantity: {{ quantity }}</p>
+    <hr>
+    <h3>Total Price: {{ totalPrice }} JD</h3>
+  </div>
+  <p [hidden]="quantity !== 0">Your cart is empty. Click Add to Cart.</p>
+</section>

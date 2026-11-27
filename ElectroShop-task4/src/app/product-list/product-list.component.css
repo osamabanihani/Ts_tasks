@@ -1,0 +1,10 @@
+h2, .categories, .order { text-align: center; }
+.products { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.product { background: white; border: 1px solid #ddd; padding: 12px; width: 175px; text-align: center; }
+img { width: 150px; height: 110px; object-fit: contain; }
+.discount-card { background: #fff9ef; }
+.available-card { border-color: green; }
+.unavailable-card { border-color: red; }
+.premium-card { border-width: 2px; font-weight: bold; }
+.available { color: green; }
+.unavailable { color: red; }
